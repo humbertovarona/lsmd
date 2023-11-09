@@ -102,23 +102,37 @@ __Outputs:__
 
 ### Summary
 
-
+This code defines a function called generate_directory_structure_markdown that generates a markdown file (directory_structure.md) representing the directory structure of a given path. The function uses the os.walk function to traverse the directory tree and writes the directory structure to the markdown file.
 
 **Example Usage**
 
+generate_directory_structure_markdown("/path/to/directory")
 
+This code will generate a markdown file named directory_structure.md in the current directory, representing the directory structure of the /path/to/directory.
 
 **Code Analysis**
 
 __Inputs:__
 
-
+- path (optional): A string representing the path of the directory to generate the directory structure for. If not provided, the current directory is used.
 
 __Flow:__
 
-
+1. Open the directory_structure.md file in write mode.
+2. Write the header line to the file.
+3. Traverse the directory tree using os.walk, iterating over each root directory, subdirectories, and files.
+4. Exclude the venv directory from the subdirectories list.
+5. Filter out directories starting with a dot (.) or ending with .gitignore or .ignore.
+6. Filter out files starting with a dot (.) or ending with .gitignore or .ignore.
+7. Exclude the directory_structure.md file from the files list.
+8. Calculate the current depth of the directory in the tree.
+9. Write the directory name and icon to the file, with appropriate indentation based on the depth.
+10. Iterate over each file in the directory.
+11. Calculate the depth for the file based on the current depth.
+12. Get the file path and size.
+13. Format the file size in kilobytes (kB), megabytes (MB), or gigabytes (GB) based on its size.
+14. Write the file name, icon, and size to the file, with appropriate indentation based on the depth.
 
 __Outputs:__
 
-
-
+- None: The function writes the directory structure to the directory_structure.md file.
