@@ -131,4 +131,4 @@ __Flow:__
 
 __Outputs:__
 
-- None: The function writes the directory structure to the directory_structure.md file.
+- None: The function writes the directory structure to the `directory_structure.md` file.
