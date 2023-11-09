@@ -53,7 +53,7 @@ print(formatted_size)
 
 __Inputs:__
 
-size (integer): The file size in bytes.
+- size (integer): The file size in bytes.
 
 __Flow:__
 
@@ -64,31 +64,35 @@ __Flow:__
 
 __Outputs:__
 
-A formatted string representing the file size in kilobytes (kB), megabytes (MB), or gigabytes (GB).
+- A formatted string representing the file size in kilobytes (kB), megabytes (MB), or gigabytes (GB).
 
 ## Function: repeat_string
 
 ### Summary
 
-
+The repeat_string function takes in two parameters: times and string. It returns a string that is the concatenation of string repeated times number of times.
 
 **Example Usage**
 
+repeat_string(3, ">")
 
+This will return ">>>" because the string ">" is repeated 3 times.
 
 **Code Analysis**
 
 __Inputs:__
 
-
+- times (integer): The number of times the string should be repeated.
+- string (string): The string to be repeated.
 
 __Flow:__
 
-
+1. Check if the value of times is less than 1. If it is, return an empty string.
+2. If times is greater than or equal to 1, multiply the string by times and return the result.
 
 __Outputs:__
 
-
+- A string that is the concatenation of string repeated times number of times.
 
 
 
