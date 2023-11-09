@@ -53,7 +53,7 @@ print(formatted_size)
 
 __Inputs:__
 
-- size (integer): The file size in bytes.
+- `size` (integer): The file size in bytes.
 
 __Flow:__
 
@@ -82,8 +82,8 @@ This will return ">>>" because the string ">" is repeated 3 times.
 
 __Inputs:__
 
-- times (integer): The number of times the string should be repeated.
-- string (string): The string to be repeated.
+- `times` (integer): The number of times the string should be repeated.
+- `string` (string): The string to be repeated.
 
 __Flow:__
 
@@ -94,11 +94,7 @@ __Outputs:__
 
 - A string that is the concatenation of string repeated times number of times.
 
-
-
-
 ## Function: generate_directory_structure_markdown
-
 
 ### Summary
 
@@ -114,7 +110,7 @@ This code will generate a markdown file named directory_structure.md in the curr
 
 __Inputs:__
 
-- path (optional): A string representing the path of the directory to generate the directory structure for. If not provided, the current directory is used.
+- `path` (optional): A string representing the path of the directory to generate the directory structure for. If not provided, the current directory is used.
 
 __Flow:__
 
