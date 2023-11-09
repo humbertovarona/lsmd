@@ -51,18 +51,70 @@ print(formatted_size)
 
 **Code Analysis**
 
-__Inputs__
+__Inputs:__
 
 size (integer): The file size in bytes.
 
-__Flow__
+__Flow:__
 
-Divide the size by 1024 to convert it to kilobytes.
-If the resulting size is less than 1024, return the size formatted as kilobytes with one decimal place (e.g., "1.2 kB").
-If the resulting size is between 1024 and 1024 * 1024 (exclusive), divide it by 1024 to convert it to megabytes and return the size formatted as megabytes with one decimal place (e.g., "1.2 MB").
-If the resulting size is greater than or equal to 1024 * 1024, divide it by 1024 * 1024 to convert it to gigabytes and return the size formatted as gigabytes with one decimal place (e.g., "1.2 GB").
+1. Divide the size by 1024 to convert it to kilobytes.
+2. If the resulting size is less than 1024, return the size formatted as kilobytes with one decimal place (e.g., "1.2 kB").
+3. If the resulting size is between 1024 and 1024 * 1024 (exclusive), divide it by 1024 to convert it to megabytes and return the size formatted as megabytes with one decimal place (e.g., "1.2 MB").
+4. If the resulting size is greater than or equal to 1024 * 1024, divide it by 1024 * 1024 to convert it to gigabytes and return the size formatted as gigabytes with one decimal place (e.g., "1.2 GB").
 
-__Outputs__
+__Outputs:__
 
 A formatted string representing the file size in kilobytes (kB), megabytes (MB), or gigabytes (GB).
+
+## Function: repeat_string
+
+### Summary
+
+
+
+**Example Usage**
+
+
+
+**Code Analysis**
+
+__Inputs:__
+
+
+
+__Flow:__
+
+
+
+__Outputs:__
+
+
+
+
+
+
+## Function: generate_directory_structure_markdown
+
+
+### Summary
+
+
+
+**Example Usage**
+
+
+
+**Code Analysis**
+
+__Inputs:__
+
+
+
+__Flow:__
+
+
+
+__Outputs:__
+
+
 
